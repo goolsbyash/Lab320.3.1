@@ -3,8 +3,10 @@ export default function Score(props) {
   console.log(scores);
   return (
     <ul>
-      <li>Date: {scores.date}</li>
-      <li>Score: {scores.score}</li>
+      <li>
+        Date: {scores.date} <br />
+        Score: {scores.score}
+      </li>
     </ul>
   );
 }

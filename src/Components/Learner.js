@@ -5,14 +5,16 @@ export default function Learner(props) {
   return (
     <div>
       {learners.map((learner) => (
-        <div key={learner.id}>
+        <div>
           <h2>{learner.name}</h2>
           <section style={{ width: "20%", float: "center" }}>
-            <b>Biograpy</b> <br /> {learner.bio}
+            <b>Biograpy</b> <br /> {learner.bio} <br />
           </section>
           <section>
             <b>Scores</b> <br />
-            {learner.scores.map((score) => (<Score scores={score}></Score>))}
+            {learner.scores.map((score) => (
+              <Score scores={score}></Score>
+            ))}
           </section>
         </div>
       ))}
